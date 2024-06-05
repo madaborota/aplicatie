@@ -1,0 +1,52 @@
+ 
+body {
+    background-image: url('img/images.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+.hero {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero .display-4 {
+    font-weight: bold;
+}
+
+.services .card {
+    transition: transform 0.3s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+.features ul li::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+}
+
+  
+  

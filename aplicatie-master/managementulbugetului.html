@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Managementul Bugetului Personal</title>
+    <style>
+        body1 {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .box {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1, h2, h3 {
+            color: #333333;
+        }
+        p {
+            color: #666666;
+        }
+        .quiz {
+            background: #e8e8e8;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .quiz h3 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+     <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+              <h2>
+                <img src="img/12.png" alt="Logo" class="logo" width="50px" height="50px">Wallet</h2>
+                <nav>
+                    <ul class="nav">
+                        
+                            <a class="nav-link" href="http://localhost/aplicatie/aplicatie-master/calculbuget.html?#">Calcul buget</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/aplicatie/aplicatie-master/schimbvalutar.html?#">Schimb valutar</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Despre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/aplicatie/aplicatie-master/login.html?#">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/aplicatie/aplicatie-master/signin.html?#">SignIn</a>
+                          </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    </body>
+    <body1>
+<div class="container">
+    <div class="box">
+        <h2>Ce este bugetul personal?</h2>
+        <p>Bugetul personal este un plan financiar care estimează veniturile și cheltuielile pentru o anumită perioadă de timp. Acesta te ajută să îți gestionezi banii și să te asiguri că îți poți acoperi toate cheltuielile necesare, economisind în același timp pentru obiectivele tale financiare.</p>
+        <img src="img/planning.jpg" alt="Planificarea bugetului">
+    </div>
+
+    <div class="box">
+        <h2>Pași pentru a gestiona eficient bugetul personal</h2>
+        <h3>1. Evaluarea veniturilor</h3>
+        <p>Începe prin a identifica toate sursele tale de venit, inclusiv salariul, bonusurile, veniturile pasive, etc. Notează-le pentru a avea o imagine clară asupra resurselor financiare disponibile.</p>
+        <img src="https://www.example.com/images/income-evaluation.jpg" alt="Evaluarea veniturilor">
+
+        <h3>2. Monitorizarea cheltuielilor</h3>
+        <p>Urmărește toate cheltuielile tale lunare, fie că sunt fixe (chirie, utilități) sau variabile (mâncare, divertisment). Poți folosi o aplicație de bugetare sau un simplu tabel în Excel pentru a înregistra aceste date.</p>
+        <img src="https://www.example.com/images/expense-tracking.jpg" alt="Monitorizarea cheltuielilor">
+
+        <h3>3. Stabilirea obiectivelor financiare</h3>
+        <p>Stabilește obiective financiare clare, cum ar fi economisirea pentru o vacanță, cumpărarea unei mașini sau constituirea unui fond de urgență. Obiectivele te vor ajuta să rămâi motivat și disciplinat în gestionarea bugetului.</p>
+        <img src="https://www.example.com/images/financial-goals.jpg" alt="Obiective financiare">
+
+        <h3>4. Crearea unui plan de economisire</h3>
+        <p>Odată ce ai o imagine clară asupra veniturilor și cheltuielilor tale, stabilește un plan de economisire. Alocă un procent din veniturile tale pentru economii și investiții, asigurându-te că acest procent este realist și sustenabil.</p>
+        <img src="https://www.example.com/images/savings-plan.jpg" alt="Plan de economisire">
+
+        <h3>5. Revizuirea și ajustarea bugetului</h3>
+        <p>Revizuiește-ți bugetul periodic pentru a vedea dacă ești pe drumul cel bun. Ajustează-l în funcție de schimbările din veniturile sau cheltuielile tale și asigură-te că îți menții obiectivele financiare în atenție.</p>
+        <img src="https://www.example.com/images/budget-review.jpg" alt="Revizuirea bugetului">
+    </div>
+
+    <div class="box">
+        <h2>Tabel de Exemplu: Buget Lunar</h2>
+        <table>
+            <tr>
+                <th>Categoria</th>
+                <th>Bugetat</th>
+                <th>Cheltuit</th>
+                <th>Diferență</th>
+            </tr>
+            <tr>
+                <td>Venituri</td>
+                <td>5000 RON</td>
+                <td>5000 RON</td>
+                <td>0 RON</td>
+            </tr>
+            <tr>
+                <td>Chirie</td>
+                <td>1500 RON</td>
+                <td>1500 RON</td>
+                <td>0 RON</td>
+            </tr>
+            <tr>
+                <td>Utilități</td>
+                <td>300 RON</td>
+                <td>250 RON</td>
+                <td>50 RON</td>
+            </tr>
+            <tr>
+                <td>Mâncare</td>
+                <td>800 RON</td>
+                <td>850 RON</td>
+                <td>-50 RON</td>
+            </tr>
+            <tr>
+                <td>Divertisment</td>
+                <td>400 RON</td>
+                <td>450 RON</td>
+                <td>-50 RON</td>
+            </tr>
+            <tr>
+                <td>Economii</td>
+                <td>1000 RON</td>
+                <td>1000 RON</td>
+                <td>0 RON</td>
+            </tr>
+            <tr>
+                <td>Altele</td>
+                <td>500 RON</td>
+                <td>400 RON</td>
+                <td>100 RON</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box quiz">
+        <h2>Quiz: Cât de bine îți gestionezi bugetul personal?</h2>
+        <form id="quizForm">
+            <div>
+                <h3>1. Care este primul pas în gestionarea bugetului personal?</h3>
+                <input type="radio" id="q1a1" name="q1" value="a">
+                <label for="q1a1">A. Crearea unui plan de economisire</label><br>
+                <input type="radio" id="q1a2" name="q1" value="b">
+                <label for="q1a2">B. Evaluarea veniturilor</label><br>
+                <input type="radio" id="q1a3" name="q1" value="c">
+                <label for="q1a3">C. Stabilirea obiectivelor financiare</label>
+            </div>
+            <div>
+                <h3>2. Ce ar trebui să faci pentru a monitoriza cheltuielile?</h3>
+                <input type="radio" id="q2a1" name="q2" value="a">
+                <label for="q2a1">A. Să le ignori</label><br>
+                <input type="radio" id="q2a2" name="q2" value="b">
+                <label for="q2a2">B. Să le înregistrezi</label><br>
+                <input type="radio" id="q2a3" name="q2" value="c">
+                <label for="q2a3">C. Să le minimalizezi</label>
+            </div>
+            <div>
+                <h3>3. Cât de des ar trebui să-ți revizuiești bugetul?</h3>
+                <input type="radio" id="q3a1" name="q3" value="a">
+                <label for="q3a1">A. O dată pe an</label><br>
+                <input type="radio" id="q3a2" name="q3" value="b">
+                <label for="q3a2">B. Lunar</label><br>
+                <input type="radio" id="q3a3" name="q3" value="c">
+                <label for="q3a3">C. Săptămânal</label>
+            </div>
+            <div>
+                <h3>4. Ce ar trebui să faci dacă cheltuielile tale depășesc bugetul?</h3>
+                <input type="radio" id="q4a1" name="q4" value="a">
+                <label for="q4a1">A. Să împrumuți bani</label><br>
+                <input type="radio" id="q4a2" name="q4" value="b">
+                <label for="q4a2">B. Să ajustezi bugetul</label><br>
+                <input type="radio" id="q4a3" name="q4" value="c">
+                <label for="q4a3">C. Să ignori problema</label>
+            </div>
+            <div>
+                <h3>5. Care este un obiectiv financiar sănătos?</h3>
+                <input type="radio" id="q5a1" name="q5" value="a">
+                <label for="q5a1">A. Să cheltui tot ce câștigi</label><br>
+                <input type="radio" id="q5a2" name="q5" value="b">
+                <label for="q5a2">B. Să economisești pentru urgențe</label><br>
+                <input type="radio" id="q5a3" name="q5" value="c">
+                <label for="q5a3">C. Să împrumuți cât mai mult posibil</label>
+            </div>
+            <button type="button" onclick="checkQuiz()">Verifică Răspunsurile</button>
+        </form>
+        <p id="quizResult"></p>
+    </div>
+</div>
+
+<script>
+function checkQuiz() {
+    const answers = {
+        q1: 'b',
+        q2: 'b',
+        q3: 'b',
+        q4: 'b',
+        q5: 'b'
+    };
+
+    let score = 0;
+    const form = document.getElementById('quizForm');
+    const formData = new FormData(form);
+    formData.forEach((value, key) => {
+        if (value === answers[key]) {
+            score++;
+        }
+    });
+
+    const result = document.getElementById('quizResult');
+    result.textContent = 'Ai răspuns corect la ' + score + ' din 5 întrebări.';
+}
+</script>
+</body1>
+<body>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Secțiune</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Secțiune</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
+      </div>
+
+      <div class="col-2">
+        <h5>Secțiune</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Aboneaza-te la newsletter-ul nostru</h5>
+          <p>Rezumat lunar cu ceea ce este nou și interesant de la noi.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Abonati-va</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2021 Company, Inc. Toate drepturile rezervate.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
+
