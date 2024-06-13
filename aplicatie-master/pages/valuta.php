@@ -8,126 +8,126 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-    #currency-calculator .form-group label {
-        font-weight: bold;
-    }
+        #currency-calculator .form-group label {
+            font-weight: bold;
+        }
 
-    #currency-calculator #result {
-        font-size: 1.25em;
-        font-weight: bold;
-    }
+        #currency-calculator #result {
+            font-size: 1.25em;
+            font-weight: bold;
+        }
 
-    #currency-calculator,
-    .exchange-rates-table {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        #currency-calculator,
+        .exchange-rates-table {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    #currency-calculator button {
-        width: 100%;
-    }
+        #currency-calculator button {
+            width: 100%;
+        }
 
-    #rates-calculator {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    @media (max-width: 768px) {
         #rates-calculator {
-            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-    }
 
-    .flag-icon {
-        width: 24px;
-        height: auto;
-        margin-right: 10px;
-    }
+        @media (max-width: 768px) {
+            #rates-calculator {
+                flex-direction: column;
+            }
+        }
 
-    .consulting-tips {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-    }
+        .flag-icon {
+            width: 24px;
+            height: auto;
+            margin-right: 10px;
+        }
 
-    .consulting-tips h3 {
-        margin-bottom: 20px;
-    }
+        .consulting-tips {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
 
-    .consulting-tips ul {
-        list-style-type: none;
-        padding: 0;
-    }
+        .consulting-tips h3 {
+            margin-bottom: 20px;
+        }
 
-    .consulting-tips ul li {
-        margin-bottom: 10px;
-        padding-left: 20px;
-        position: relative;
-    }
+        .consulting-tips ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    .consulting-tips ul li::before {
-        content: "✔";
-        color: green;
-        position: absolute;
-        left: 0;
-    }
+        .consulting-tips ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
 
-    .consulting-tips img {
-        max-width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        .consulting-tips ul li::before {
+            content: "✔";
+            color: green;
+            position: absolute;
+            left: 0;
+        }
 
-    /* Stilizare pentru sectiunea de transferuri internationale */
-    .international-transfers {
-        background-color: #f8f9fa;
-        padding: 50px 0;
-    }
+        .consulting-tips img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .international-transfers .container {
-        position: relative;
-    }
+        /* Stilizare pentru sectiunea de transferuri internationale */
+        .international-transfers {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
 
-    .international-transfers .description {
-        text-align: center;
-        margin-bottom: 40px;
-    }
+        .international-transfers .container {
+            position: relative;
+        }
 
-    .international-transfers .form-container {
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        padding: 30px;
-    }
-
-    .international-transfers form {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .international-transfers form .form-group {
-        margin-bottom: 20px;
-    }
-
-    .international-transfers form label {
-        font-weight: bold;
-    }
-
-    .international-transfers form button {
-        width: 100%;
-    }
-
-    @media (max-width: 768px) {
         .international-transfers .description {
-            padding: 0 20px;
+            text-align: center;
+            margin-bottom: 40px;
         }
-    }
+
+        .international-transfers .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .international-transfers form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .international-transfers form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .international-transfers form label {
+            font-weight: bold;
+        }
+
+        .international-transfers form button {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .international-transfers .description {
+                padding: 0 20px;
+            }
+        }
     </style>
 </head>
 
@@ -194,20 +194,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><img src="https://www.countryflags.io/EU/flat/24.png" alt="Steagul EU"
-                                            class="flag-icon"> EUR</td>
+                                    <td><img src="../assets/img/european-union.png" alt="Steagul EU" class="flag-icon">
+                                        EUR</td>
                                     <td>4.85</td>
                                     <td>4.87</td>
                                 </tr>
                                 <tr>
-                                    <td><img src="https://www.countryflags.io/US/flat/24.png" alt="Steagul US"
-                                            class="flag-icon"> USD</td>
+                                    <td><img src="../assets/img/united-states.png" alt="Steagul US" class="flag-icon">
+                                        USD</td>
                                     <td>4.10</td>
                                     <td>4.12</td>
                                 </tr>
                                 <tr>
-                                    <td><img src="https://www.countryflags.io/GB/flat/24.png" alt="Steagul UK"
-                                            class="flag-icon"> GBP</td>
+                                    <td><img src="../assets/img/united-kingdom.png" alt="Steagul UK" class="flag-icon">
+                                        GBP</td>
                                     <td>5.60</td>
                                     <td>5.63</td>
                                 </tr>
@@ -222,8 +222,7 @@
                         <form id="exchange-form">
                             <div class="form-group mb-3">
                                 <label for="amount">Suma în RON</label>
-                                <input type="number" class="form-control" id="amount" placeholder="Introduceți suma"
-                                    required>
+                                <input type="number" class="form-control" id="amount" placeholder="Introduceți suma" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="currency">Selectați Valuta</label>
@@ -257,28 +256,23 @@
                         <form id="international-transfer-form">
                             <div class="form-group">
                                 <label for="full-name">Nume complet</label>
-                                <input type="text" class="form-control" id="full-name"
-                                    placeholder="Introduceți numele complet" required>
+                                <input type="text" class="form-control" id="full-name" placeholder="Introduceți numele complet" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Introduceți email-ul"
-                                    required>
+                                <input type="email" class="form-control" id="email" placeholder="Introduceți email-ul" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Număr de telefon</label>
-                                <input type="tel" class="form-control" id="phone"
-                                    placeholder="Introduceți numărul de telefon" required>
+                                <input type="tel" class="form-control" id="phone" placeholder="Introduceți numărul de telefon" required>
                             </div>
                             <div class="form-group">
                                 <label for="destination">Destinația transferului</label>
-                                <input type="text" class="form-control" id="destination"
-                                    placeholder="Introduceți destinația transferului" required>
+                                <input type="text" class="form-control" id="destination" placeholder="Introduceți destinația transferului" required>
                             </div>
                             <div class="form-group">
                                 <label for="amount-to-send">Suma de trimis (RON)</label>
-                                <input type="number" class="form-control" id="amount-to-send"
-                                    placeholder="Introduceți suma de trimis" required>
+                                <input type="number" class="form-control" id="amount-to-send" placeholder="Introduceți suma de trimis" required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Trimite Transferul</button>
                         </form>
@@ -313,8 +307,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="consulting-image">
-                        <img src="../assets/img/house-money-key.jpeg" alt="Consultanță Financiară"
-                            class="img-fluid rounded shadow">
+                        <img src="../assets/img/house-money-key.jpeg" alt="Consultanță Financiară" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -329,81 +322,56 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-    document.getElementById('exchange-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+        document.getElementById('exchange-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-        const amount = parseFloat(document.getElementById('amount').value);
-        const currency = document.getElementById('currency').value;
+            const amount = parseFloat(document.getElementById('amount').value);
+            const currency = document.getElementById('currency').value;
 
-        // Cursurile de schimb
-        const exchangeRates = {
-            EUR: {
-                buy: 4.85,
-                sell: 4.87
-            },
-            USD: {
-                buy: 4.10,
-                sell: 4.12
-            },
-            GBP: {
-                buy: 5.60,
-                sell: 5.63
+            // Cursurile de schimb
+            const exchangeRates = {
+                EUR: {
+                    buy: 4.85,
+                    sell: 4.87
+                },
+                USD: {
+                    buy: 4.10,
+                    sell: 4.12
+                },
+                GBP: {
+                    buy: 5.60,
+                    sell: 5.63
+                }
+            };
+
+            if (exchangeRates[currency]) {
+                const result = amount / exchangeRates[currency].sell;
+                document.getElementById('result').innerText = `Suma în ${currency}: ${result.toFixed(2)}`;
+            } else {
+                document.getElementById('result').innerText = 'Valută necunoscută!';
             }
-        };
+        });
 
-        if (exchangeRates[currency]) {
-            const result = amount / exchangeRates[currency].sell;
-            document.getElementById('result').innerText = `Suma în ${currency}: ${result.toFixed(2)}`;
-        } else {
-            document.getElementById('result').innerText = 'Valută necunoscută!';
-        }
-    });
+        document.getElementById('international-transfer-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    document.getElementById('international-transfer-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+            const fullName = document.getElementById('full-name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const destination = document.getElementById('destination').value;
+            const amountToSend = parseFloat(document.getElementById('amount-to-send').value);
 
-        const fullName = document.getElementById('full-name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const destination = document.getElementById('destination').value;
-        const amountToSend = parseFloat(document.getElementById('amount-to-send').value);
+            // Aici puteți adăuga logica pentru a trimite datele formularului către server sau alte operații necesare
 
-        // Aici puteți adăuga logica pentru a trimite datele formularului către server sau alte operații necesare
-
-        // Exemplu de afișare a datelor în consolă
-        console.log(`Transfer internațional solicitat:
+            // Exemplu de afișare a datelor în consolă
+            console.log(`Transfer internațional solicitat:
             Nume complet: ${fullName}
             Email: ${email}
             Telefon: ${phone}
             Destinație: ${destination}
             Suma de trimis: ${amountToSend} RON`);
 
-        // Înlocuiți cu acțiunea dorită după trimiterea formularului (de ex. redirecționare, mesaj de succes etc.)
-        alert('Formularul a fost trimis cu succes!');
-    });
+            // Înlocuiți cu acțiunea dorită după trimiterea formularului (de ex. redirecționare, mesaj de succes etc.)
+            alert('Formularul a fost trimis cu succes!');
+        });
     </script>
-
-
-
-    <tbody>
-        <tr>
-            <td><img src="../assets/img/european-union.png" alt="Steagul EU" class="flag-icon">
-                EUR
-            </td>
-            <td>4.85</td>
-            <td>4.87</td>
-        </tr>
-        <tr>
-            <td><img src="../assets/img/united-states.png" alt="Steagul US" class="flag-icon">
-                USD</td>
-            <td>4.10</td>
-            <td>4.12</td>
-        </tr>
-        <tr>
-            <td><img src="../assets/img/united-kingdom.png" alt="Steagul UK" class="flag-icon">
-                GBP</td>
-            <td>5.60</td>
-            <td>5.63</td>
-        </tr>
-        <!-- Adăugați mai multe rânduri după necesitate -->
-    </tbody>

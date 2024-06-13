@@ -1,14 +1,17 @@
     <!-- Footer Section -->
-    <div class="container">
-        <footer class="py-5">
+
+    <div class="container" style="min-width: 100%">
+        <footer class="py-5 ">
             <div class="row">
                 <div class="col-2">
                     <h5>Secțiune</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări
+                                frecvente</a>
                         </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
                     </ul>
@@ -17,9 +20,11 @@
                     <h5>Secțiune</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări
+                                frecvente</a>
                         </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
                     </ul>
@@ -28,9 +33,11 @@
                     <h5>Secțiune</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acasă</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Caracteristici</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Prețuri</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări frecvente</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Întrebări
+                                frecvente</a>
                         </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Despre</a></li>
                     </ul>
@@ -47,17 +54,17 @@
                     </form>
                 </div>
             </div>
-            <div class="d-flex justify
-            <div class=" d-flex justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2021 Company, Inc. Toate drepturile rezervate.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
-                    </li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <div class="d-flex justify">
+                <div class=" d-flex justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2021 Company, Inc. Toate drepturile rezervate.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+                        </li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                        </li>
+                    </ul>
+                </div>
         </footer>
     </div>
 
