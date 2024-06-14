@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,21 +12,21 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
-    .hero {
-        background: linear-gradient(45deg, #007bff, #00a8ff);
-        color: white;
-    }
+        .hero {
+            background: linear-gradient(45deg, #007bff, #00a8ff);
+            color: white;
+        }
 
-    .contact,
-    .consultants {
-        transition: transform 0.3s, opacity 0.3s;
-    }
+        .contact,
+        .consultants {
+            transition: transform 0.3s, opacity 0.3s;
+        }
 
-    .contact:hover,
-    .consultants:hover {
-        transform: translateY(-10px);
-        opacity: 0.9;
-    }
+        .contact:hover,
+        .consultants:hover {
+            transform: translateY(-10px);
+            opacity: 0.9;
+        }
     </style>
 </head>
 
@@ -50,20 +53,24 @@
                         <p><strong>Telefon:</strong> +40 123 456 789</p>
                     </div>
                     <div class="col-md-6 animate__animated animate__fadeInRight">
-                        <form action="submit_contact_form.php" method="POST">
+                        <form action="../includes/contact.inc.php" method="POST">
                             <div class="form-group">
-                                <label for="name">Nume</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <label for="prenume">Prenume</label>
+                                <input type="text" class="form-control" id="prenume" name="prenume" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nume">Nume</label>
+                                <input type="text" class="form-control" id="nume" name="nume" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Mesaj</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <label for="mesaje">Mesaj</label>
+                                <textarea class="form-control" id="mesaje" name="mesaje" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Trimite</button>
+                            <button type="submit" class="btn btn-primary" name="mesaj">Trimite</button>
                         </form>
                     </div>
                 </div>
@@ -97,8 +104,7 @@
         include_once '../assets/componets/footer.php';
         ?>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
 

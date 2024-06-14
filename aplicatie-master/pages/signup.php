@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +49,7 @@
 <body>
   <?php
   include_once '../assets/componets/navbar.php';
+  include_once '../includes/dbh.inc.php';
   ?>
   <main>
     <section class="hero text-center py-5 animate__animated animate__fadeIn">
@@ -61,7 +65,7 @@
         <div class="signup-container row animate__animated animate__fadeInUp">
           <div class="col-md-6">
             <h2 class="text-center">Sign Up</h2>
-            <form action="submit_signup_form.php" method="POST">
+            <form action="../includes/signup.inc.php" method="POST">
               <div class="form-group">
                 <label for="name">Nume</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -71,18 +75,37 @@
                 <input type="email" class="form-control" id="email" name="email" required>
               </div>
               <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="uid" required>
+              </div>
+              <div class="form-group">
                 <label for="password">Parolă</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+                <input type="password" class="form-control" id="password" name="pwd" required>
               </div>
               <div class="form-group">
                 <label for="confirm-password">Confirmă Parola</label>
-                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                <input type="password" class="form-control" id="confirm-password" name="rePwd" required>
               </div>
-              <button type="submit" class="btn btn-primary">Înregistrare</button>
+              <button type="submit" class="btn btn-primary" name="submit">Înregistrare</button>
             </form>
             <p class="text-center mt-3">
-              <a href="login.php">Aveți deja un cont? Autentificați-vă aici</a>
+              <a href="../pages/login.php">Aveți deja un cont? Autentificați-vă aici</a>
             </p>
+            <?php
+            if (isset($_GET["error"])) {
+              if ($_GET["error"] == "emptyinput") {
+                echo "<div class='alert alert-danger' role='alert'>Completeaza toate campurile!</div>";
+              } else if ($_GET["error"] == "invaliduid") {
+                echo "<div class='alert alert-danger' role='alert'>Username-ul este invalid!</div>";
+              } else if ($_GET["error"] == "invalidemail") {
+                echo "<div class='alert alert-danger' role='alert'>Email-ul este invalid!</div>";
+              } else if ($_GET["error"] == "passwordsdontmatch") {
+                echo "<div class='alert alert-danger' role='alert'>Parolele nu se potrivesc!</div>";
+              } else if ($_GET["error"] == "usernametaken") {
+                echo "<div class='alert alert-danger' role='alert'>Username-ul este deja luat!</div>";
+              }
+            }
+            ?>
           </div>
           <div class="col-md-6 d-none d-md-block">
             <img src="../assets/img/uk.png" alt="Sign Up" class="signup-image">
