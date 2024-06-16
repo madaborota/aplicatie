@@ -1,5 +1,6 @@
 <?php
 require_once 'dbh.inc.php';
+session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = $_POST;
@@ -12,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $desriere = $descrieri[$i];
         $suma = $sume[$i];
         $categorie = $categorii[$i];
-        $username = $_SESSION["username"] ?? 'ale';
+        $username = $_SESSION["useruid"];
 
         $sql = "INSERT INTO buget(username,cheltuiala,suma,categorie) VALUES ('$username', '$desriere', '$suma', '$categorie')";
         $conn->query($sql);

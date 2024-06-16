@@ -27,6 +27,10 @@
                         echo "<li class='nav-item'>
                         <a class='nav-link text-white' href='http://localhost/aplicatie/aplicatie-master/pages/buget.php#'>Calcul buget</a>
                         </li>";
+                        echo "<li class='nav-item'>
+                        <a class='nav-link text-white' href='http://localhost/aplicatie/aplicatie-master/pages/tabelBuget.php#'>Tabel buget</a>
+                        </li>";
+
 
                         if ($_SESSION["useruid"] == 'Administrator') {
                             echo "<li class='nav-item'>

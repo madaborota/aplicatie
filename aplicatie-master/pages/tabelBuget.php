@@ -1,7 +1,12 @@
 <?php
+session_start();
 include_once '../assets/componets/navbar.php';
 require_once '../includes/dbh.inc.php';
 ?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestionați-vă eficient bugetul financiar și tranzactiile valutare</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/styles/style.css">
 <style>
     .mesaj {
         margin-top: 20px;
@@ -24,10 +29,10 @@ require_once '../includes/dbh.inc.php';
                     echo "<h2>Wellcome : </h2>" . "<h2 style='color:green;'>" . $_SESSION["useruid"] . "</h2>";
                 }
                 ?>
-                <h1>Aquarium Messages</h1>
+                <h1>Istroricul Cheltuirlior Dumnravoastra</h1>
             </div>
             <div class="col">
-                <img src="imgs/email.png" width="150" height="150">
+                <img src="../assets/img/bani.png" width="150" height="150">
             </div>
         </div>
     </div>
